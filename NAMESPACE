@@ -1,0 +1,17 @@
+exportPattern("^[[:alpha:]]+")
+importFrom("graphics", "plot")
+importFrom("stats","model.frame", "model.matrix", "model.response",
+"pnorm", "qnorm", "quantile", "rgamma", "rmultinom",
+"rnorm", "rpois", "runif", "sd",
+"dpois","dnorm","rbeta")
+importFrom("MCMCpack","rdirichlet")
+importFrom("survival","Surv")
+import("coda","MCMCpack","survival")
+S3method(summary, PICBayes)
+S3method(coef, PICBayes)
+S3method(logLik, PICBayes)
+S3method(plot, PICBayes)
+S3method(PICBayes, default)
+S3method(PICBayes, formula)
+
+
